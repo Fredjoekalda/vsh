@@ -1,0 +1,16 @@
+Kasutasin käsku apache installimiseks:
+apt-get install apache2
+
+´´´
+<!DOCTYPE html>
+<html> #html hakkab
+<head>
+<title>Praktikum</title>
+</head>
+<body>
+<h1>Fred Joekalda</h1>
+<h2>ISP117 fred.joekalda@khk.ee</h2>
+</body>
+</html>
+´´´
+
