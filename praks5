@@ -1,0 +1,22 @@
+wget http://wordpress.org/latest.zip
+
+aptitude install unzip
+
+unzip -q latest.zip
+
+chown -R www-data:www-data /var/www/html/wordpress
+
+chmod -R 755 /var/www/html/wordpress
+
+mkdir -p /var/www/html/wordpress/wp-content/uploads
+
+chown -R www-data:www-data /var/www/html/wordpress/wp-content/uploads
+
+
+Mysql-is: 
+
+CREATE DATABASE wordpress;
+CREATE USER user@localhost IDENTIFIED BY 'qwerty';
+GRANT ALL PRIVILEGES ON wordpress.* TO user@localhost;
+FLUSH PRIVILEGES;
+exit;
